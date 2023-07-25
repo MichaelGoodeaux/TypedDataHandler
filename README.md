@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/typed-data-handler.svg)](https://badge.fury.io/js/typed-data-handler)
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/MichaelGoodeaux/TypedDataHandler/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/MichaelGoodeaux/TypedDataHandler/tree/main)
 
 TypedDataHandler is a TypeScript utility library that simplifies handling and validating various data types, including strings, numbers, dates, email addresses, and more. It provides functions and classes to perform common data manipulations, validations, conversions, and formatting.
 
