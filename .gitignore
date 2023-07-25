@@ -1,0 +1,27 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore compiled JavaScript and TypeScript declaration files
+dist/
+*.js
+*.js.map
+*.d.ts
+
+# Ignore any temporary or cache files
+*.log
+*.log.*
+*.tmp
+*.temp
+*.swp
+.DS_Store
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.suo
+*.user
+*.sln
+*.swc
+*.editorconfig
