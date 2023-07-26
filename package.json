@@ -37,9 +37,9 @@
     "typescript": "^4.9.5"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/typed-data-handler/issues"
+    "url": "https://github.com/MichaelGoodeaux/TypedDataHandler/issues"
   },
-  "homepage": "https://github.com/yourusername/typed-data-handler#readme",
+  "homepage": "https://github.com/MichaelGoodeaux/typed-data-handler#readme",
   "directories": {
     "test": "tests"
   },
