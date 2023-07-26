@@ -1,4 +1,4 @@
-import {
+const {
     isString,
     isNumber,
     isArray,
@@ -9,7 +9,7 @@ import {
     toNumber,
     capitalize,
     trimWhitespace,
-  } from '../src/dataHandler';
+  } = require('../src/dataHandler');
   
   describe('isString', () => {
     it('should return true for a string', () => {

@@ -13,6 +13,12 @@ export function isPositiveNumber(value: any): boolean {
   
   export function isValidPassword(password: string): boolean {
     // Add your password validation logic here (e.g., minimum length, special characters, etc.)
-    return password.length >= 8;
-  }
+    // Check for minimum length, special characters, no uppercase letter, and no digit
+      const hasMinimumLength: boolean = password.length >= 8;
+      const hasSpecialCharacter: boolean = /[!@#$%^&*()_+[\]{};':"\\|,.<>/?]+/.test(password);
+      const hasNoDigit: boolean = /\d/.test(password);
+    
+      // Combine all the conditions
+      return hasMinimumLength && hasSpecialCharacter && !hasNoDigit;
+    }
   
