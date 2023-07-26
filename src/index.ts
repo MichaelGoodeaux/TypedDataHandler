@@ -1,5 +1,5 @@
 // Import all functions and classes from the other files
-import {
+const {
     isString,
     isNumber,
     isArray,
@@ -10,21 +10,21 @@ import {
     toNumber,
     capitalize,
     trimWhitespace,
-  } from './dataHandler';
+  } = require('./dataHandler');
   
-  import {
+  const {
     isPositiveNumber,
     isNonEmptyString,
     isValidUsername,
     isValidPassword,
-  } from './validators';
+  } = require('./validators');
   
-  import {
+  const {
     formatNumber,
     formatDate,
     serializeData,
     deserializeData,
-  } from './formatters';
+  } = require('./formatters');
   
   // Export all the functions and classes as a single object
   export {
