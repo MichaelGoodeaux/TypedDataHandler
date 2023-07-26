@@ -35,5 +35,8 @@
   "homepage": "https://github.com/yourusername/typed-data-handler#readme",
   "directories": {
     "test": "tests"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
