@@ -1,5 +1,5 @@
-export function formatNumber(value: number, decimalPlaces: number = 2): string {
-    return value.toFixed(decimalPlaces);
+export function formatNumber(number: number, decimalPlaces: number = 2): number {
+  return Number(number.toFixed(decimalPlaces));
   }
 
   // formatDate is currently broken for some reason and keeps adding a day onto the formatted date. Removing functionality until bug is fixed
