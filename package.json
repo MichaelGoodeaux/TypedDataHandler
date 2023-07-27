@@ -1,6 +1,6 @@
 {
   "name": "typed-data-handler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A TypeScript utility library for handling and validating various data types.",
   "author": "Michael Goodeaux",
   "license": "MIT",
