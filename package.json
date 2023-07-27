@@ -2,11 +2,11 @@
   "name": "typed-data-handler",
   "version": "1.0.0",
   "description": "A TypeScript utility library for handling and validating various data types.",
-  "author": "Your Name",
+  "author": "Michael Goodeaux",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yourusername/typed-data-handler.git"
+    "url": "git+https://github.com/MichaelGoodeaux/typed-data-handler.git"
   },
   "keywords": [
     "typescript",
