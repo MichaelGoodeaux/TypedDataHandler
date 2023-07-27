@@ -34,5 +34,5 @@ jobs:
           node-version: 16
       - run: npm ci
       - name: Authenticate with npm registry
-        run: npm config set '//registry.npmjs.org/:_authToken' ${{secrets.npm_token}}
+        run: npm config set '//registry.npmjs.org/:_authToken' ${{secrets.NPM_TOKEN}}
       - run: npm publish
