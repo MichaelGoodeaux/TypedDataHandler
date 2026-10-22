@@ -4,35 +4,30 @@ on:
   release:
     types: [created]
 
-jobs: 
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/package.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 22
+          cache: npm   # replaces your manual cache step
       - run: npm ci
       - run: npm test
 
   publishNpm:
     needs: build
     runs-on: ubuntu-latest
-    env:
-      NPM_TOKEN: ${{secrets.npm_token}}
+    permissions:
+      contents: read
+      id-token: write          # lets GitHub issue the identity token
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm install -g npm@latest   # trusted publishing needs npm 11.5.1+
       - run: npm ci
-      - name: Authenticate with npm registry
-        run: npm config set '//registry.npmjs.org/:_authToken' ${{secrets.NPM_TOKEN}}
       - run: npm publish
